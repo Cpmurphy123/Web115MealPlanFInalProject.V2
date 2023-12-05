@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="Banner.png" alt="Banner Image" style="width: 100%; max-height: 250px; display: block; padding-top: 40px; padding-bottom: 40px; padding-right: 30px; padding-left: 30px;">
+  </header>
+
+
+    <main>
+        <form id="mealPlanForm">
+            <!-- Your form elements go here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="goal">Goal for the Week:</label>
+            <select id="goal" name="goal">
+                <option value="Lose Weight">Lose Weight</option>
+                <option value="Maintain Weight">Maintain Weight</option>
+                <option value="Build Muscle">Build Muscle</option>
+                <option value="Eat Healthier">Eat Healthier</option>
+            </select>
+
+            <label for="proteinPreference">Protein Preference:</label>
+            <select id="proteinPreference" name="proteinPreference">
+                <option value="Chicken">Chicken</option>
+                <option value="Beef">Beef</option>
+                <option value="Fish">Fish</option>
+                <option value="Tofu">Tofu</option>
+                <option value="Salmon">Salmon</option>
+                <option value="Eggs">Eggs</option>
+            </select>
+
+            <label for="carbPreference">Carb Preference:</label>
+            <select id="carbPreference" name="carbPreference">
+                <option value="Rice">Rice</option>
+                <option value="Quinoa">Quinoa</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Sweet Potatoes">Sweet Potatoes</option>
+                <option value="Bread">Bread</option>
+                <option value="Oats">Oats</option>
+            </select>
+
+            <label for="veggiePreference">Veggie Preference:</label>
+            <select id="veggiePreference" name="veggiePreference">
+                <option value="Broccoli">Broccoli</option>
+                <option value="Spinach">Spinach</option>
+                <option value="Bell Peppers">Bell Peppers</option>
+                <option value="Zucchini">Zucchini</option>
+                <option value="Carrots">Carrots</option>
+                <option value="Kale">Kale</option>
+            </select>
+
+            <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+        </form>
+    </main>
+
+    <script src="projectJS.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
